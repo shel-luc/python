@@ -1,0 +1,13 @@
+from tkinter import *
+fen1 = Tk()
+fen1.title('LOUK')
+txt1 = Label(fen1, text='premier champ:')
+txt2 = Label(fen1, text='second:')
+entr1 = Entry(fen1)
+entr2 = Entry(fen1)
+txt1.grid(row=0)
+txt2.grid(row=1)
+entr1.grid(row=0, column=1)
+entr2.grid(row=1, column=1)
+Button(fen1, text='Quitter', command=fen1.quit).grid(row=2,column=0)
+fen1.mainloop()
